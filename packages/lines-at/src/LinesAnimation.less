@@ -1,0 +1,70 @@
+@import './lines.less';
+
+.animation-button-lines {
+    display: flex;
+
+    .button {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .button {
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        appearance: none;
+        outline: none;
+        border-style: solid;
+        border-width: 1px;
+        -webkit-transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+        transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+    }
+
+    .button-none {
+        border-width: 0;
+        border-style: hidden;
+    }
+
+    .button-gradient {
+        border-width: 0;
+        background: linear-gradient(105.23deg, #01A4FF 33.35%, #01FFC2 115.77%);
+        color: #000000;
+    }
+
+    .button-transparent {
+        //
+        border-color: hsla(0, 0%, 100%, 0.6);
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .button-gradient:hover {
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .button-transparent:hover {
+        border-color: #fff;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+
+    .button-none,
+    .button-gradient,
+    .button-transparent {
+        &:hover {
+            cursor: pointer;
+        }
+
+        .lines();
+    }
+
+    .button-gradient {
+        .set-lines-color(#01a4ff, #01ffc2);
+    }
+
+    .button-transparent,
+    .button-none {
+        .set-lines-color(#c9e9ff, #f8fcff);
+    }
+}

@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+
+##
+node_modules/
+.DS_Store
+logs/*
+.project
+dist/
+
+## packages/
+packages/**/node_modules/
+packages/**/.DS_Store
+packages/**/logs/*
+packages/**/.project
+packages/**/dist/

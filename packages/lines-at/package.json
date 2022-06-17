@@ -1,0 +1,19 @@
+{
+    "name": "lines-at",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "father-build",
+        "up": "npm run up:patch",
+        "up:patch": "npm version patch --no-git-tag",
+        "up:minor": "npm version minor --no-git-tag",
+        "up:major": "npm version major --no-git-tag"
+    },
+    "keywords": [],
+    "author": "dezhao.chen",
+    "license": "ISC",
+    "devDependencies": {
+        "father-build": "^1.7.0"
+    }
+}
